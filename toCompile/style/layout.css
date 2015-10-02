@@ -8,12 +8,14 @@ main {
 }
 
 footer {
-	@mixin wh 100%, 7vh;
+	min-height: 12%;
+	width: 100%;
 	bgc: $gray;
 }
 
 header {
-	@mixin wh 100%, 10vh;
+	min-height: 17%;
+	width: 100%;
 	bgc: $font-primary;	
 }
 

@@ -40,3 +40,7 @@ $font: 'Roboto', sans-serif;
 
 	bs:  box-shadow;
 }
+
+.exclamation {
+	color: $alert;
+}

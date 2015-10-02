@@ -19,12 +19,12 @@
   <body ng-controller="mainController as vm" class="box-col">
     <header>
       <div class="logo"> <a href="#" class="title"> 
-          <h1>Chiletubbienator</h1></a></div>
+          <h1 class="h2">Chiletubbienator</h1></a></div>
     </header>
     <main>
       <div class="box-col col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
         <h2>Chiletubinea tus frases!</h2>
-        <p>Por un Chile que no discrimine a los demas Teletubbies!  <i tooltip="Agrega el nombre de un Teletubbie en remplazo de las palabras 'po' o 'poh'" tooltip-placement="right" class="fa fa-question-circle fa-2x"></i></p><a href="#" ng-click="vm.openModal()">Aclaraciones</a>
+        <p>Por un Chile que no discrimine a los demás Teletubbies!  <i tooltip="Agrega el nombre de un Teletubbie en remplazo de las palabras 'po' o 'poh'" tooltip-placement="right" class="fa fa-question-circle fa-2x"></i></p><a href="#" ng-click="vm.openModal()">Aclaraciones <i class="fa fa-exclamation-triangle exclamation"></i></a>
         <hr>
         <form name="funForm" nonvalidate ng-submit="vm.newPhrase(funForm.$valid ,vm.str, &quot;success&quot;)">
           <div class="form-group">
@@ -47,12 +47,16 @@
           </div>
           <div class="modal-body">
             <ul>
-              <li>La pagina fue hecha con intenciones de hacer algo divertido nada mas, sin intentar faltar el respeto ni molestar a nadie. Tengo amigos chilenos y siempre me he reido con ellos del 'poh' asi como de la contraparte argentina, el 'che'.</li>
-              <li>Espero que lo sepan entender y puedan reirse un poco como lo hice yo</li>
+              <li>La página fue hecha con intenciones de hacer algo divertido nada más, sin intentar faltar el respeto ni molestar a nadie. Tengo amigos chilenos y siempre me he reído con ellos del 'poh' así como de la contraparte argentina, el 'che'.</li>
+              <li>Espero que lo sepan entender y puedan reirse un poco como lo hice yo!!!</li>
+              <hr>
+              <li>Las palabras que se agregan son totalmente aleatorias, puede ser que se agregue varias veces seguidas la misma.</li>
+              <li>Proximament vas a poder twittear la frase generada ;)</li>
+              <li>Si te gusto la página, compartila. <i>Podes twittearla directamente en el botón de abajo.</i> \o/</li>
             </ul>
           </div>
           <div class="modal-footer">
-            <button type="button" ng-click="vm.ok()" class="btn btn-success">Ok</button>
+            <button type="button" ng-click="vm.ok()" class="btn btn-success">OK</button>
           </div>
         </script>
       </div>

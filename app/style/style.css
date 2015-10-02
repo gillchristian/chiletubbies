@@ -1,0 +1,306 @@
+/* ----- colors ----- */
+/* --- general layout --- */
+body{
+	min-height: 100vh;
+}
+
+main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer {
+	width: 100%;
+	height: 7vh;
+	background-color: #F5F5F0;
+}
+
+header {
+	width: 100%;
+	height: 10vh;
+	background-color: #212121;	
+}
+
+.logo {
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+.content-col {
+	margin: 15px;
+}
+/* --- boxes --- */
+.box-col {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.box {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.box-wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+
+.box-around {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+
+.box-between {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.box-center-between-wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.box-start {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+
+.box-center-around {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+
+.box-wrap-center-around {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+
+.box-wrap-around {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+
+.box-col-around {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+
+.box-col-center-around {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+/* --- tiems --- */
+
+.item-full {
+	width: 100%;
+}
+
+
+/* --- items width --- */
+/* --- 5 by 5 percentage based cols --- */
+/* --- need to be inside a flexbox --- */
+.col-5 {
+	width: 5%;
+}
+.col-10 {
+	width: 10%;
+}
+.col-15 {
+	width: 15%;
+}
+.col-20 {
+	width: 20%;
+}
+.col-25 {
+	width: 25%;
+}
+.col-30 {
+	width: 30%;
+}
+.col-35 {
+	width: 35%;
+}
+.col-40 {
+	width: 40%;
+}
+.col-45 {
+	width: 45%;
+}
+.col-50 {
+	width: 50%;
+}
+.col-55 {
+	width: 55%;
+}
+.col-60 {
+	width: 60%;
+}
+.col-65 {
+	width: 65%;
+}
+.col-70 {
+	width: 70%;
+}
+.col-75 {
+	width: 75%;
+}
+.col-80 {
+	width: 80%;
+}
+.col-85 {
+	width: 85%;
+}
+.col-90 {
+	width: 90%;
+}
+.col-95 {
+	width: 95%;
+}
+.col-100 {
+	width: 100%;
+}
+
+
+/* --- General --- */
+body {
+    font-family: 'Roboto',sans-serif;
+}
+
+/* --- text helpers --- */
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.title:link {
+	text-decoration: none;
+	color: #a94442;
+}
+
+.title:visited {
+	text-decoration: none;
+	color: #a94442;
+}
+
+.title:hover {
+	text-decoration: none;
+	color: #a94442;
+}
+
+.title:active {
+	text-decoration: none;
+	color: #a94442;
+}
+/*# sourceMappingURL=style.css.map */

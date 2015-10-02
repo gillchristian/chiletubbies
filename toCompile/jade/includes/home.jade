@@ -1,0 +1,22 @@
+//- this is the main view
+.box-col.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-lg-4.col-lg-offset-4
+  h2 Chiletubinea tus frases!
+  p Por un Chile que no discrimine a los demas Teletubbies!  
+    i.fa.fa-question-circle.fa-2x(
+        tooltip="Agrega el nombre de un Teletubbie en remplazo de las palabras 'po' o 'poh'",
+        tooltip-placement='right'
+      )
+  a(href='#', ng-click='vm.openModal()') Aclaraciones
+  hr
+  form(name='funForm', nonvalidate, ng-submit='vm.newPhrase(funForm.$valid ,vm.str, "success")')
+    .form-group
+      input.form-control(type='text', ng-model='vm.str', required)
+    .form-group
+      button.btn.btn-primary.pull-right(type='submit', ng-disabled='stepThree.$invalid') Agregar
+  hr
+  alert(ng-repeat='phrase in vm.activePhrases' type='{{phrase.type}}' close='vm.dismissPhrase($index)') 
+    p {{::phrase.msg | tubbinate}}
+    p <i>({{::phrase.msg}})</i>
+    //- a(href='https://twitter.com/share', data-text='{{::phrase.msg | tubbinate}} {{window.location}}' data-via='gillchristian' data-hashtags='chiletubbienator') Tweet
+  
+include ../includes/modal

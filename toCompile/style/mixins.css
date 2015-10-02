@@ -1,0 +1,13 @@
+@define-mixin wh $width, $height {
+	width: $width;
+	height: $height;
+}
+
+@define-mixin link $class, $color {
+	@each $state in (link, visited, hover, active) {
+		.$class:$state {
+		    text-decoration: none;
+		    color: $color;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixins';
+@import 'layout';
+@import 'flexbox-grid';
+
+
+/* --- General --- */
+body {
+    ff: $font;
+}
+
+/* --- text helpers --- */
+
+@each $orientation in (left, center, right) {
+	.text-$orientation {
+		text-align: $orientation;
+	} 
+}
+
+@mixin link title, $alert;

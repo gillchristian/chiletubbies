@@ -1,0 +1,84 @@
+/* --- boxes --- */
+.box-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.box {
+	display: flex;
+}
+
+.box-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.box-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+.box-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.box-center-between-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.box-start {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.box-center-around {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.box-wrap-center-around {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.box-wrap-around {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.box-col-around {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.box-col-center-around {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+/* --- tiems --- */
+
+.item-full {
+	width: 100%;
+}
+
+
+/* --- items width --- */
+/* --- 5 by 5 percentage based cols --- */
+/* --- need to be inside a flexbox --- */
+@for $index from 5 to 100 by 5 {
+    .col-$index {
+        width: $(index)%;
+    }
+}

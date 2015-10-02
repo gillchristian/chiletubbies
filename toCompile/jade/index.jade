@@ -1,0 +1,54 @@
+doctype html
+html.no-js(ng-app='funApp')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='Fun app to swap the "poh" from chilenian expression with other Teletubbies names')
+    meta(name='keywords', content='Chile, Teletubbies, Chiletubbies')
+    meta(name='author', content='Christian Gill')
+    meta(name='viewport', content='width=device-width', initial-scale=1.0, maximum-scale=1.0, user-scalable='no')
+
+    title Chiletubbienator
+
+    // bootstrap
+    link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    // custom css
+    link(rel='stylesheet', href='app/style/style.css')
+    // fonts
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,700italic,700,400italic,300italic,300', rel='stylesheet', type='text/css')
+    // icons
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+  body.box-col(ng-controller='mainController as vm')
+    header
+        .logo 
+            a.title(href='#') 
+                h1 Chiletubbienator
+    main
+        include includes/home
+    footer.box-center-between-wrap
+        .logo
+            p.quote
+                |hecho por 
+                a.title(href='http://twitter.com/gillchristian', target='_blank')  @gillchristian 
+                |  con <i class='fa fa-heart'></i> a mis amigos chilenos
+        .logo
+            p
+              a(href='https://twitter.com/share', class='twitter-share-button', data-text='Por un chile con mas Teletubbies!' data-via='gillchristian' data-hashtags='chiletubbienator') Tweet
+              iframe(src='https://ghbtns.com/github-btn.html?user=gillchristian&repo=chiletubbienator&type=fork&count=false', frameborder='0', scrolling='0', width='170px', height='20px')
+
+    // dependecies
+    //- angular
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js')
+    //- ui bootstrap
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.3/ui-bootstrap-tpls.min.js')
+
+    // app scripts
+    script(src='app/js/app.js')
+    //- controllers
+    script(src='app/js/mainCtrl.js')
+    //- filters
+    script(src='app/js/tubbinator.js')
+    //- directives
+    //- script(src='app/scripts/directives/troopCard.js')
+    //- directives
+    // twitter script 
+    script !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');

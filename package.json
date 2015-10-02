@@ -1,0 +1,32 @@
+{
+  "name": "chiletubbies",
+  "version": "0.0.1",
+  "description": "Simple and fun website to transfrom 'chilenian' short expression to 'chiletubbinian' expressions :)",
+  "main": "servr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chile",
+    "teletubbies",
+    "poh",
+    "fun"
+  ],
+  "author": "gillchristian",
+  "license": "MIT",
+  "devDependencies": {
+    "csswring": "^4.0.0",
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^6.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rucksack": "^0.1.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "merge-stream": "^1.0.0",
+    "postcss-advanced-variables": "^1.1.0",
+    "postcss-import": "^7.0.0",
+    "postcss-mixins": "^1.0.1",
+    "postcss-nested": "^1.0.0"
+  }
+}

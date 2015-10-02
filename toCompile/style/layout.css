@@ -1,0 +1,27 @@
+/* --- general layout --- */
+body{
+	min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+	@mixin wh 100%, 7vh;
+	bgc: $gray;
+}
+
+header {
+	@mixin wh 100%, 10vh;
+	bgc: $font-primary;	
+}
+
+.logo {
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+.content-col {
+	margin: 15px;
+}

@@ -1,0 +1,10 @@
+div(ng-controller='mainController as vm')
+  script(type='text/ng-template', id='modal.html')
+    .modal-header
+      h3.modal-title.primary Aclaraciones
+    .modal-body
+      ul
+        li La pagina fue hecha con intenciones de hacer algo divertido nada mas, sin intentar faltar el respeto ni molestar a nadie. Tengo amigos chilenos y siempre me he reido con ellos del 'poh' asi como de la contraparte argentina, el 'che'.
+        li Espero que lo sepan entender y puedan reirse un poco como lo hice yo
+    .modal-footer
+      button.btn.btn-success(type='button', ng-click='vm.ok()') Ok

@@ -21,7 +21,10 @@
             };
 
             vm.newPhrase = function( isValid, content, type) {
-               if (isValid) vm.activePhrases.push({type: type, msg: content});
+               if (isValid) {
+                  vm.activePhrases.push({type: type, msg: content});
+                  vm.str = null;
+            };
             };
 
 
@@ -42,7 +45,7 @@
          function($modalInstance){
 
             var vm = this;
-            
+
             vm.ok = function() {
                $modalInstance.close(true);
             };

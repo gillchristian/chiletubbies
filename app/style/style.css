@@ -1,4 +1,8 @@
 /* ----- colors ----- */
+
+.exclamation {
+	color: #a94442;
+}
 /* --- general layout --- */
 body{
 	min-height: 100vh;
@@ -12,14 +16,14 @@ main {
 }
 
 footer {
+	min-height: 12%;
 	width: 100%;
-	height: 7vh;
 	background-color: #F5F5F0;
 }
 
 header {
+	min-height: 17%;
 	width: 100%;
-	height: 10vh;
 	background-color: #212121;	
 }
 

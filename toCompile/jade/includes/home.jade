@@ -1,12 +1,12 @@
 //- this is the main view
 .box-col.col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3.col-lg-4.col-lg-offset-4
   h2 Chiletubinea tus frases!
-  p Por un Chile que no discrimine a los demas Teletubbies!  
+  p Por un Chile que no discrimine a los demás Teletubbies!  
     i.fa.fa-question-circle.fa-2x(
         tooltip="Agrega el nombre de un Teletubbie en remplazo de las palabras 'po' o 'poh'",
         tooltip-placement='right'
       )
-  a(href='#', ng-click='vm.openModal()') Aclaraciones
+  a(href='#', ng-click='vm.openModal()') Aclaraciones <i class="fa fa-exclamation-triangle exclamation"></i>
   hr
   form(name='funForm', nonvalidate, ng-submit='vm.newPhrase(funForm.$valid ,vm.str, "success")')
     .form-group

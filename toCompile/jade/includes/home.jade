@@ -10,7 +10,7 @@
   hr
   form(name='funForm', nonvalidate, ng-submit='vm.newPhrase(funForm.$valid ,vm.str, "success")')
     .form-group
-      input.form-control(type='text', ng-model='vm.str', required)
+      input.form-control(type='text', ng-model='vm.str', placeholder='Ingresa una frase con la palabra po/poh/poo', required)
     .form-group
       button.btn.btn-primary.pull-right(type='submit', ng-disabled='stepThree.$invalid') Agregar
   hr

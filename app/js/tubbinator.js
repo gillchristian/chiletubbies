@@ -4,7 +4,7 @@
    angular.module('funApp.filters', [])
       .filter('tubbinate', [
          function(){
-            
+
             function getRandomInt(min, max) {
               return Math.floor(Math.random() * (max - min)) + min;
             }
@@ -17,7 +17,7 @@
 
                parts.forEach(function(currentValue, index){
                   var i = getRandomInt(0, names.length);
-                  parts[index] = currentValue.replace( /(\bpo\b)|(\bpoh\b)/ig, names[i] );
+                  parts[index] = currentValue.replace( /(\bpo\b)|(\bpoh\b)|(\bpoo\b)/ig, names[i] );
                });
 
                return parts.join(' ');
